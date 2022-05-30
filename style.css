@@ -14,7 +14,7 @@
 
 }
 .container{
-    width: 45vw;
+    width: 90%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -28,7 +28,7 @@ H1{
     opacity: .5;
 }
 .form{
-    width: 40vw;
+    width: 100%;
     display: flex;
     align-items: center;
 }
@@ -48,11 +48,11 @@ H1{
     border-radius: 0 5px 5px 0;
     border: none;
     color: #fff;
-    font-size: 12pt;
+    font-size: 9pt;
     font-weight: 600;
 }
 ul{
-    width: 40vw; 
+    width: 90%; 
 }
 .li-style{
     width: 100%;
@@ -63,21 +63,72 @@ ul{
     list-style: none;
 }
 .item{
-    width: 73%;
+    width: 60%;
     padding-left: 8px;
     font-size: 14pt;
     color: #00171f;
+    overflow: scroll;
 }
 .box{
-    width: 1.5vw;
-    height: 1.5vw;
+    width: 4vw;
+    height: 4vw;
 }
 .dlt-btn{
-    width: 15%;
+    width: 20%;
     height: 4vh;
     background-color: rgb(253, 122, 61);
     border: none;
     border-radius: 15px;
     color: #fff;
     font-weight: 600;
+}
+
+@media screen and (min-width:700px){
+    .form{
+        width: 70%;
+    }
+    .form input, .form button{
+        height: 10vh;
+    }
+    ul{
+        width: 70%;
+    }
+    .box{
+        width: 3vw;
+        height: 3vw;
+    }
+    .li-style{
+        height: 10vh;
+    }
+    .dlt-btn{
+        width: 20%;
+        height: 6vh;
+    }
+}
+@media screen and (min-width:900px) {
+    .form{
+        width: 40%;
+    }
+    .form input, .form button{
+        height: 6vh;
+       
+    }
+    ul{
+        width: 40%;
+    }
+    .li-style{
+        height: 7vh;
+    }
+    .item{
+        width: 73%;
+        overflow: unset;
+    }
+    .box{
+        width: 1.5vw;
+        height: 1.5vw;
+    }
+    .dlt-btn{
+        width: 15%;
+        height: 4vh;
+    }
 }
