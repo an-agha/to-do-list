@@ -83,7 +83,7 @@ ul{
     font-weight: 600;
 }
 
-@media screen and (min-width:700px){
+@media screen and (min-width:640px){
     .form{
         width: 70%;
     }
@@ -105,7 +105,7 @@ ul{
         height: 6vh;
     }
 }
-@media screen and (min-width:900px) {
+@media screen and (min-width:900px){
     .form{
         width: 40%;
     }
